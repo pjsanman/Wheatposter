@@ -10,6 +10,7 @@
     "autoform": {},
     "iron-router-progress": {},
     "collectionFS": {},
-    "cfs-s3": {}
+    "cfs-s3": {},
+    "ui-dropped-event": {}
   }
 }

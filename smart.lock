@@ -11,7 +11,8 @@
       "autoform": {},
       "iron-router-progress": {},
       "collectionFS": {},
-      "cfs-s3": {}
+      "cfs-s3": {},
+      "ui-dropped-event": {}
     },
     "packages": {
       "momentjs": {
@@ -63,6 +64,11 @@
         "git": "https://github.com/CollectionFS/Meteor-cfs-s3.git",
         "tag": "v0.0.29",
         "commit": "97d3c544165c766115f2b91a6aaca54a7438a558"
+      },
+      "ui-dropped-event": {
+        "git": "https://github.com/CollectionFS/Meteor-ui-dropped-event.git",
+        "tag": "v0.0.3",
+        "commit": "df3a46293da7dd3b45664a239bd9ccf4d23eb514"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

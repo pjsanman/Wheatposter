@@ -49,3 +49,4 @@ i18next-meteor
 /reactive-property
 /micro-queue
 /cfs-s3
+/ui-dropped-event
