@@ -9,6 +9,7 @@
     "spin": {},
     "autoform": {},
     "iron-router-progress": {},
-    "collectionFS": {}
+    "collectionFS": {},
+    "cfs-s3": {}
   }
 }
