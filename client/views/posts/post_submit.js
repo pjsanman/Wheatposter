@@ -41,6 +41,7 @@ Template.post_submit.events({
     }
 
     var title= $('#title').val();
+    var presenter= $('#presenter').val();
     var shortUrl = $('#short-url').val();
     var body = instance.editor.exportFile();
     var categories=[];
@@ -55,6 +56,7 @@ Template.post_submit.events({
 
     var properties = {
         headline: title
+      , presenter: presenter
       , body: body
       , shortUrl: shortUrl
       , categories: categories
