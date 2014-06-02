@@ -50,3 +50,4 @@ i18next-meteor
 /micro-queue
 /cfs-s3
 /ui-dropped-event
+/taggingjs

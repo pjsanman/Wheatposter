@@ -11,6 +11,7 @@
     "iron-router-progress": {},
     "collectionFS": {},
     "cfs-s3": {},
-    "ui-dropped-event": {}
+    "ui-dropped-event": {},
+    "taggingjs": {}
   }
 }

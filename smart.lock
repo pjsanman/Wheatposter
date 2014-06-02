@@ -12,7 +12,8 @@
       "iron-router-progress": {},
       "collectionFS": {},
       "cfs-s3": {},
-      "ui-dropped-event": {}
+      "ui-dropped-event": {},
+      "taggingjs": {}
     },
     "packages": {
       "momentjs": {
@@ -70,6 +71,11 @@
         "tag": "v0.0.3",
         "commit": "df3a46293da7dd3b45664a239bd9ccf4d23eb514"
       },
+      "taggingjs": {
+        "git": "https://github.com/purplechap/meteor-taggingjs.git",
+        "tag": "v0.0.3",
+        "commit": "7f144385666ae7c611ef1550b6ca11710d378b80"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
         "tag": "v0.2.4",
@@ -82,8 +88,8 @@
       },
       "collection2": {
         "git": "https://github.com/aldeed/meteor-collection2.git",
-        "tag": "v0.3.11",
-        "commit": "7e970671305657678e8508d8107d5e6c5e158559"
+        "tag": "v0.4.0",
+        "commit": "5648f7c53ee98f3ac8fbe82a55e6fd78fc67cfbc"
       },
       "moment": {
         "git": "https://github.com/acreeger/meteor-moment.git",
