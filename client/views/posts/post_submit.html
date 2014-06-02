@@ -3,15 +3,15 @@
     <form class="grid-block form-horizontal">
       <div class="control-group">
         <label class="control-label">{{i18n "Title"}}</label>
-        <div class="controls"><input id="title" type="text" value="" /><a href="#" class="get-title-link inline-link">{{i18n "Suggest title"}}</a></div>
+        <div class="controls"><input id="title" type="text" maxlength="50" value="" /><a href="#" class="get-title-link inline-link">{{i18n "Suggest title"}}</a></div>
       </div>
       <div class="control-group">
         <label class="control-label">{{i18n "Presented by"}}</label>
-        <div class="controls"><input id="presenter" type="text" value="" /></div>
+        <div class="controls"><input id="presenter" type="text" maxlength="50" value="" /></div>
       </div>
       <div class="control-group">
         <label class="control-label">{{i18n "Description"}}</label>
-        <div class="controls" id="editor"><textarea id="body" value="" class="input-xlarge"></textarea></div>
+        <div class="controls" id="editor"><textarea id="body" value="" maxlength="500" class="input-xlarge"></textarea></div>
       </div>
       {{#if categoriesEnabled}}
       <div class="control-group">
@@ -29,6 +29,12 @@
         <label class="control-label">{{i18n "Date"}}</label>
         <div class="controls"><input id="submitted" type="text" value="{{submittedDate}}" /><input id="submitted_hidden" type="hidden" value="{{submitted}}" /></div>
       </div>
+
+      <div class="control-group">
+        <label class="control-label">{{i18n "Time"}}</label>
+        <div class="controls"><input id="time" type="text" maxlength="10" value="" /></div>
+      </div>
+
       <div class="control-group">
         <label class="control-label">{{i18n "URL"}}</label>
         <div class="controls"><input id="url" type="text" value="" /></div>

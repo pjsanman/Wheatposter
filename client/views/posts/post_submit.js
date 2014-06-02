@@ -46,6 +46,7 @@ Template.post_submit.events({
     var body = instance.editor.exportFile();
     var categories=[];
     var url= $('#url').val();
+    var time= $('#time').val();
     var sticky=!!$('#sticky').attr('checked');
     var submitted = $('#submitted_hidden').val();
     var userId = $('#postUser').val();
@@ -61,6 +62,7 @@ Template.post_submit.events({
       , body: body
       , shortUrl: shortUrl
       , categories: categories
+      , time: time
       , sticky: sticky
       , submitted: submitted
       , userId: userId
