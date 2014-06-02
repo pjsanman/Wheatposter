@@ -25,6 +25,7 @@ Template.post_submit.rendered = function(){
     $('#submitted_hidden').val(moment(ev.date).valueOf());
   });
 
+  $('#tag').tagging();
   // $("#postUser").selectToAutocomplete(); // XXX
 
 }
@@ -105,7 +106,7 @@ Template.post_submit.events({
     }else{
       alert("Please fill in an URL first!");
       $(".get-title-link").removeClass("loading");
-    }
   }
+}
 
 });

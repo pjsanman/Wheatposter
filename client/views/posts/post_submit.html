@@ -29,10 +29,15 @@
         <label class="control-label">{{i18n "Date"}}</label>
         <div class="controls"><input id="submitted" type="text" value="{{submittedDate}}" /><input id="submitted_hidden" type="hidden" value="{{submitted}}" /></div>
       </div>
-
       <div class="control-group">
         <label class="control-label">{{i18n "Time"}}</label>
         <div class="controls"><input id="time" type="text" maxlength="10" value="" /></div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label">{{i18n "Tags"}}</label>
+        <div class="controls"><div data-tags-input-name="posterTag" id="tag" data-case-sensitive="true" >tag</div></div>
+        <p class="help-block">Press Enter, Comma or Spacebar to create a new tag, Backspace or Delete to remove the last one.</p>
       </div>
 
       <div class="control-group">
