@@ -45,6 +45,7 @@ Template.post_submit.events({
     var shortUrl = $('#short-url').val();
     var body = instance.editor.exportFile();
     var categories=[];
+    var url= $('#url').val();
     var sticky=!!$('#sticky').attr('checked');
     var submitted = $('#submitted_hidden').val();
     var userId = $('#postUser').val();
@@ -65,6 +66,11 @@ Template.post_submit.events({
       , userId: userId
       , status: status
     };
+
+   if(url){
+      var cleanUrl = (url.substring(0, 7) == "http://" || url.substring(0, 8) == "https://") ? url : "http://"+url;
+      properties.url = cleanUrl;
+    }
 
     Meteor.call('post', properties, function(error, post) {
       if(error){
