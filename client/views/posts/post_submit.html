@@ -12,7 +12,7 @@
       <div class="control-group">
         <label class="control-label">{{i18n "Upload Poster"}}</label>
         <div class="controls">
-          <input type="filepicker-dragdrop" data-fp-apikey="ADHIhkzIyQn276L8pya7Gz" data-fp-mimetypes="image/*" data-fp-container="modal" data-fp-maxsize="1048576" data-fp-services="BOX,COMPUTER,DROPBOX,FACEBOOK,GOOGLE_DRIVE,FLICKR,GMAIL,URL" onchange="alert(event.fpfile.url)">
+          <input type="filepicker-dragdrop" data-fp-apikey="ADHIhkzIyQn276L8pya7Gz" data-fp-mimetypes="image/*" data-fp-container="modal" data-fp-maxsize="1048576" data-fp-services="BOX,COMPUTER,DROPBOX,FACEBOOK,GOOGLE_DRIVE,FLICKR,GMAIL,URL" onchange="alert(event.fpfile.url)" />
         </div>
       </div>
       <div class="control-group">
@@ -39,13 +39,13 @@
         <label class="control-label">{{i18n "Time"}}</label>
         <div class="controls"><input id="time" type="text" maxlength="10" value="" /></div>
       </div>
-
       <div class="control-group">
         <label class="control-label">{{i18n "Tags"}}</label>
-        <div class="controls"><div data-tags-input-name="posterTag" id="tag" data-case-sensitive="true" >tag</div></div>
+        <div class="controls">
+          <div data-tags-input-name="posterTag" id="tag" data-case-sensitive="true" >tag</div>
+        </div>
         <p class="help-block">Press Enter, Comma or Spacebar to create a new tag, Backspace or Delete to remove the last one.</p>
       </div>
-
       <div class="control-group">
         <label class="control-label">{{i18n "URL"}}</label>
         <div class="controls"><input id="url" type="text" value="" /></div>
