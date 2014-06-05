@@ -17,18 +17,30 @@ Template.post_submit.helpers({
   }
 });
 
-Template.post_submit.rendered = function(){
-  Session.set('selectedPostId', null);
-  if(!this.editor && $('#editor').exists())
-    this.editor= new EpicEditor(EpicEditorOptions).load();
-  $('#submitted').datepicker().on('changeDate', function(ev){
-    $('#submitted_hidden').val(moment(ev.date).valueOf());
-  });
+if (Meteor.isClient) {
+  Session.set("widgetSet", false);
+  var key = "ADHIhkzIyQn276L8pya7Gz";
 
-  $('#tag').tagging();
-  // $("#postUser").selectToAutocomplete(); // XXX
+  Template.post_submit.rendered = function(){
+    Session.set('selectedPostId', null);
+    if(!this.editor && $('#editor').exists())
+      this.editor= new EpicEditor(EpicEditorOptions).load();
+    $('#submitted').datepicker().on('changeDate', function(ev){
+      $('#submitted_hidden').val(moment(ev.date).valueOf());
+    });
 
-}
+    $('#tag').tagging();
+    // $("#postUser").selectToAutocomplete(); // XXX
+    
+    if (!Session.get("widgetSet")) {  
+      var cb = function () {
+        filepicker.constructWidget(document.getElementById('constructed-widget'));
+        filepicker.makeDropPane($('#exampleDropPane')[0], { });
+      };
+      loadPicker(key, cb);
+    }
+  }
+};
 
 Template.post_submit.events({
   'click input[type=submit]': function(e, instance){

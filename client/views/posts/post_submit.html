@@ -9,6 +9,16 @@
         <label class="control-label">{{i18n "Presented by"}}</label>
         <div class="controls"><input id="presenter" type="text" maxlength="50" value="" /></div>
       </div>
+
+      <div class="control-group">
+        <label class="control-label">{{i18n "Upload Poster"}}</label>
+        <div class="controls">
+          <div id="upload" value="empty" type="filepicker-dragdrop" style="display: none;"></div>
+          <div id="exampleDropPane">Drop Here!</div>
+          <div><pre id="localDropResult"></pre></div>
+        </div>
+      </div>
+
       <div class="control-group">
         <label class="control-label">{{i18n "Description"}}</label>
         <div class="controls" id="editor"><textarea id="body" value="" maxlength="500" class="input-xlarge"></textarea></div>
