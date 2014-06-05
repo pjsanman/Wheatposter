@@ -13,7 +13,8 @@
       "collectionFS": {},
       "cfs-s3": {},
       "ui-dropped-event": {},
-      "taggingjs": {}
+      "taggingjs": {},
+      "loadpicker": {}
     },
     "packages": {
       "momentjs": {
@@ -48,8 +49,8 @@
       },
       "autoform": {
         "git": "https://github.com/aldeed/meteor-autoform.git",
-        "tag": "v0.10.0",
-        "commit": "4b298a025679a7e51892a884c11301c1d6bf19b3"
+        "tag": "v0.11.0",
+        "commit": "efdffcdf836a45c50c39696ede15399177ccb9fa"
       },
       "iron-router-progress": {
         "git": "https://github.com/Multiply/iron-router-progress.git",
@@ -75,6 +76,11 @@
         "git": "https://github.com/purplechap/meteor-taggingjs.git",
         "tag": "v0.0.3",
         "commit": "7f144385666ae7c611ef1550b6ca11710d378b80"
+      },
+      "loadpicker": {
+        "git": "https://github.com/guido4000/loadpicker.git",
+        "tag": "v1.0.0",
+        "commit": "9f8aa83427b21e2d6279db3f018900bf09560352"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

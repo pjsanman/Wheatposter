@@ -12,6 +12,7 @@
     "collectionFS": {},
     "cfs-s3": {},
     "ui-dropped-event": {},
-    "taggingjs": {}
+    "taggingjs": {},
+    "loadpicker": {}
   }
 }
