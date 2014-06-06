@@ -1,3 +1,7 @@
+if (Meteor.isClient) {
+  Session.set("widgetSet", false);
+  var key = "ADHIhkzIyQn276L8pya7Gz";
+
 Template.post_submit.helpers({
   categoriesEnabled: function(){
     return Categories.find().count();
@@ -17,21 +21,7 @@ Template.post_submit.helpers({
   }
 });
 
-if (Meteor.isClient) {
-  Session.set("widgetSet", false);
-  var key = "ADHIhkzIyQn276L8pya7Gz";
-
-  Template.post_submit.rendered = function(){
-    Session.set('selectedPostId', null);
-    if(!this.editor && $('#editor').exists())
-      this.editor= new EpicEditor(EpicEditorOptions).load();
-    $('#submitted').datepicker().on('changeDate', function(ev){
-      $('#submitted_hidden').val(moment(ev.date).valueOf());
-    });
-
-    $('#tag').tagging();
-    // $("#postUser").selectToAutocomplete(); // XXX
-    
+Template.post_submit.rendered = function ( ) { 
     if (!Session.get("widgetSet")) {  
       var cb = function () {
         filepicker.constructWidget(document.getElementById('constructed-widget'));
@@ -39,7 +29,8 @@ if (Meteor.isClient) {
       };
       loadPicker(key, cb);
     }
-  }
+    $('#tag').tagging();
+    // $("#postUser").selectToAutocomplete(); // XXX
 };
 
 Template.post_submit.events({
@@ -122,3 +113,4 @@ Template.post_submit.events({
 }
 
 });
+}
